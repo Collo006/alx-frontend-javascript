@@ -5,4 +5,25 @@ var teacher3 = {
     location: "Saul",
     contract: true
 };
-console.log(teacher3);
+var director1 = {
+    firstName: "Mary",
+    fullTimeEmployee: false,
+    lastName: "Smith",
+    location: "Saul",
+    contract: true,
+    numberOfReports: 17
+};
+var printTeacher = function (firstName, lastName) {
+    return "".concat(firstName.charAt(0), ". ").concat(lastName);
+};
+//classes
+var StudentClass = /** @class */ (function () {
+    function StudentClass(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    StudentClass.prototype.workOnHomework = function () {
+        return "Currently working";
+    };
+    return StudentClass;
+}());
